@@ -1,0 +1,32 @@
+# AmphoraVizu
+Chart visualization for metagenomics analysis tools AMPHORA2 and AmphoraNet
+
+Csaba Kerepesi, Balázs Szalkai, Vince Grolmusz
+
+PIT Bioinformatics Group
+
+Last update: Jan 24, 2015.
+
+Quick start:
+
+1. Open Source AmphoraVizu is a program written in Perl programming language. Perl is downloadable from  https://www.perl.org/get.html
+2. Use an AMPHORA2 or AmphoraNet output file as input file (sample files are available here: http://www.pitgroup.org/static/amphora2_results/ ) 
+3. A typical command: 
+perl AmphoraVizu.pl -input example_output.txt -min_confidence 0.01 -lowest_rank 2 -min_average 0.02 -chart_type column > out.html
+4. Finally open the out.html file in a web browser. 
+
+Options:
+
+-input: input file (AMPHORA2 output file), default: /dev/stdin
+-min_confidence: minimum confidence, default: 0.9
+-lowest_rank: lowest rank (1=Superkingdom, 7=Species), default: 2
+-min_average: minimum average to display, default: 0.02
+-chart_title: chart title (with optional HTML tags), to override default title
+-chart_type: "column": Column Chart output (default), "pie": Pie chart output with averages
+-chart_width: width of chart area, all CSS values are valid (default: 100%)
+-chart_height: height of chart area (default: 100%)
+-chart_compact: if 1, margins are decreased as much as possible (default: 0)
+-html_inline: if 1, tags like <html>, <head> and <body> are omitted (default: 0)     
+-miniview: 1: miniview on, 0: miniview off (default: 0)      
+-sort: "avg": sorted by averages (default), "abc" sorted by alphabet
+-quantify: "prop": shows the proportions of marker genes (default), "amounts": shows the exact amounts of marker genes
