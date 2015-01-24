@@ -1,13 +1,25 @@
-# AmphoraVizu
-Chart visualization for metagenomics analysis tools AMPHORA2 and AmphoraNet
+AmphoraVizu, Chart visualization for metagenomics analysis tools AMPHORA2 and AmphoraNet
 
-Csaba Kerepesi, Balázs Szalkai, Vince Grolmusz
+by Csaba Kerepesi, Balázs Szalkai, Vince Grolmusz
 
-PIT Bioinformatics Group
+PIT Bioinformatics Group, http://pitgroup.org/
 
-Last update: Jan 24, 2015.
+***Terms of Use:***
 
-Quick start:
+AmphoraVizu is free software: you can redistribute it and/or modify it under the terms of
+the GNU General Public License as published by the Free Software Foundation, either
+version 3 of the License, or any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details:
+<http://www.gnu.org/licenses/>.
+
+***Help:***
+
+- For any other inquiries send an Email to Csaba Kerepesi: kerepesics@gmail.com
+- AmphoraVizu webserver: http://pitgroup.org/amphoravizu
+
+***Quick start:***
 
 1. Open Source AmphoraVizu is a program written in Perl programming language. Perl is downloadable from  https://www.perl.org/get.html
 2. Use an AMPHORA2 or AmphoraNet output file as input file (sample files are available here: http://www.pitgroup.org/static/amphora2_results/ ) 
@@ -15,7 +27,7 @@ Quick start:
 perl AmphoraVizu.pl -input example_output.txt -min_confidence 0.01 -lowest_rank 2 -min_average 0.02 -chart_type column > out.html
 4. Finally open the out.html file in a web browser. 
 
-Options:
+***Options:***
 
 -input: input file (AMPHORA2 output file), default: /dev/stdin
 -min_confidence: minimum confidence, default: 0.9
