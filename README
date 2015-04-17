@@ -16,6 +16,7 @@ FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details:
 
 ***Help:***
 
+- User Manual for AmphoraVizu: http://www.pitgroup.org/static/AmphoraVizu-Manual.pdf
 - For any other inquiries send an Email to Csaba Kerepesi: kerepesics@gmail.com
 - AmphoraVizu webserver: http://pitgroup.org/amphoravizu
 
@@ -24,13 +25,13 @@ FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details:
 1. Open Source AmphoraVizu is a program written in Perl programming language. Perl is downloadable from  https://www.perl.org/get.html
 2. Use an AMPHORA2 or AmphoraNet output file as input file (sample files are available here: http://www.pitgroup.org/static/amphora2_results/ ) 
 3. A typical command: 
-perl AmphoraVizu.pl -input example_output.txt -min_confidence 0.01 -lowest_rank 2 -min_average 0.02 -chart_type column > out.html
+perl AmphoraVizu.pl -input example_output.txt -min_confidence 0.1 -lowest_rank 2 -min_average 0.02 -chart_type column > out.html
 4. Finally open the out.html file in a web browser. 
 
 ***Options:***
 
 -input: input file (AMPHORA2 output file), default: /dev/stdin
--min_confidence: minimum confidence, default: 0.9
+-min_confidence: minimum confidence, default: 0.1
 -lowest_rank: lowest rank (1=Superkingdom, 7=Species), default: 2
 -min_average: minimum average to display, default: 0.02
 -chart_title: chart title (with optional HTML tags), to override default title
