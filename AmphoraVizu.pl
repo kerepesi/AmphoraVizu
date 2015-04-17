@@ -19,7 +19,7 @@
 
 # Options:
 # -input: input file (AMPHORA2 output file), default: /dev/stdin
-# -min_confidence: minimum confidence, default: 0.9
+# -min_confidence: minimum confidence, default: 0.1
 # -lowest_rank: lowest rank (1=Superkingdom, 7=Species), default: 2
 # -min_average: minimum average to display, default: 0.02
 # -chart_title: chart title (with optional HTML tags), to override default title
@@ -46,7 +46,7 @@ for ($i = 0; $i < @ARGV; $i += 2) {
 	$args{$ARGV[$i]} = $ARGV[$i+1];
 }
 my $infile = ((exists $args{"-input"}) ? $args{"-input"} : "/dev/stdin");
-my $min_confidence = ((exists $args{"-min_confidence"}) ? $args{"-min_confidence"} : 0.9);
+my $min_confidence = ((exists $args{"-min_confidence"}) ? $args{"-min_confidence"} : 0.1);
 my $lowest_rank = ((exists $args{"-lowest_rank"}) ? $args{"-lowest_rank"} : 2);
 my $min_average = ((exists $args{"-min_average"}) ? $args{"-min_average"} : 0.02);
 my $chart_title = ((exists $args{"-chart_title"}) ? $args{"-chart_title"} : "Visualization of \$filename (lowest rank: \$lowest_rank, min. confidence: \$min_confidence, min. average: \$min_average)");
